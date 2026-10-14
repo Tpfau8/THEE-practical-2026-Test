@@ -23,8 +23,8 @@ get.multiples1to10 <- function(multiplier){ #multipkly integers from 1 to 10 by 
    return(multiplier * numbers)
 }
 
-# display results for parameter value set to 9
-current_value <- 9
+# display results for parameter value set to 3
+current_value <- 3
 results <- get.multiples1to10(multiplier = current_value)
 print(results)
 
