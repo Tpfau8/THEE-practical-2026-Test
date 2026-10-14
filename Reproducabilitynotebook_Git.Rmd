@@ -1,0 +1,47 @@
+---
+title: "Annotation testing"
+author: "Tobias"
+date: "67.10.26"
+output:
+  html_document:
+    df_print: paged
+  html_notebook: default
+  pdf_document: default
+---
+```{r}
+setwd("~tobias/documents")
+```
+
+
+
+
+# multiplier function
+
+```{r}
+get.multiples1to10 <- function(multiplier){ #multipkly integers from 1 to 10 by parameter value
+   numbers <- 1:10
+   return(multiplier * numbers)
+}
+
+# display results for parameter value set to 9
+current_value <- 9
+results <- get.multiples1to10(multiplier = current_value)
+print(results)
+
+
+the_filename <- paste("multiples1to10--multiplier", current_value, ".csv")
+print(results, file = "myResults.csv", row.names = FALSE)
+
+```
+
+```{r}
+the_filename <- paste("multiples1to10--multiplier", current_value, ".csv")
+print(the_filename)
+```
+
+
+
+
+
+
+
